@@ -3,28 +3,43 @@
     <header>
       <top-nav></top-nav>
     </header>
-    <div class="container">
-      <b-sidebar>
-        <sidebar></sidebar>
-      </b-sidebar>
-      <main>
-        <div class="container">
-          <router-view />
+    <div class="row bg-grey">
+        <div class="col-12">
+          <div class="container">
+          <p class="version-no m-4 text-left">Mobile Suit Gundam EXVS Maxiboost ON Player's Guide  <span class=" version-no-sub bg-primary p-1 text-light">Version:2.0.x</span></p>
+          </div>
         </div>
-      </main>
+      </div>
+    <main>    
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 border-right d-none d-lg-block">
+          <sidebar></sidebar>
+        </div>
+        <div class="col-sm-12 col-lg-10 px-lg-5">
+          <router-view>
+          </router-view>
+        </div>
+      </div>
     </div>
+    </main>
+    <footer>
+      <custom-footer></custom-footer>
+    </footer>
   </div>
 </template>
 
 <script>
 import Sidebar from "./components/Sidebar.vue";
 import TopNav from "./components/TopNav.vue";
+import CustomFooter from "./components/CustomFooter.vue"
 
 export default {
   name: "App",
   components: {
     Sidebar,
     TopNav,
+    CustomFooter
   },
 };
 </script>
@@ -58,11 +73,24 @@ export default {
   color: #2c3e50;
 }
 
+.version-no {
+  font-size: 1.5em;
+}
+
+.version-no-sub {
+  font-size: .75em;
+}
+
+.bg-grey {
+  background-color:#F5F8FA;
+  border-bottom: 1px solid #ddd;
+}
 
 header {
   background: white;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
+  display: initial !important;;
 }
 aside {
   flex: 1;
@@ -77,14 +105,16 @@ main {
 .content {
   display: flex;
 }
+
 /* NAVIGATION STYLING */
 .navbar-nav .dropdown-item {
   font-size: 0.75em;
 }
 
-@media (min-width: 992px) {
+
+@media (min-width: 1024px) {
   .navbar-nav .dropdown-menu {
-    width: 50vw;
+    min-width: 75vw;
     position: absolute;
     left: 50% !important;
     transform: translateX(-50%) !important;

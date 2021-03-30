@@ -1,13 +1,14 @@
 <template>
-  <b-navbar toggleable="lg" sticky="true">
+  <b-navbar toggleable="lg" sticky>
     <div class="container">
-      <b-navbar-brand><img src="../assets/logo.png" /></b-navbar-brand>
+      <b-navbar-brand><img src="../assets/logo.png" alt="Gundam EXVS Logo" /></b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-md-auto">
           <b-nav-item-dropdown
             text="New Players"
             class="has-megamenu nav-primary b-dropdown"
+            id="dropdownMenu"
           >
             <div class="row text-center text-lg-left">
               <div class="col-lg-3 border-right">
@@ -84,7 +85,7 @@
                   <b-dd-item><b-icon-dot />Special Melee</b-dd-item>
                 </b-nav-item-dropdown>
               </div>
-              <div class="col-lg-3 border-right">
+              <div class="col-lg-3">
                 <div class="d-none d-lg-block">
                   <b-dd-group><b-icon-list /> Burst</b-dd-group>
                   <b-dd-item>Burst Types</b-dd-item>
@@ -821,8 +822,7 @@
                 </div>
                 <b-nav-item-dropdown
                   id="nestedDropDown"
-                  text="Help Craft &amp; Evolve EXVS Game
-                    Theory"
+                  text="This text will be much too long to fit"
                   class="has-megamenu nav-grey d-lg-none"
                 >
                   <b-dd-item>Information Synthesis</b-dd-item>
@@ -883,6 +883,59 @@
               </div>
             </div>
           </b-nav-item-dropdown>
+          <b-nav-item-dropdown text=" Resources &amp; Other Links" class="has-megamenu nav-grey d-lg-none">
+            <div class="row text-center text-lg-left">
+              <div class="col-lg-3 border-right">
+                <b-nav-item-dropdown
+                  id="nestedDropDown"
+                  text="Introduction"
+                  class="has-megamenu nav-grey d-lg-none"
+                >
+                  <b-dd-item to="/dedication">Dedication</b-dd-item>
+                  <b-dd-item to="/foreword">Foreword</b-dd-item>
+                  <b-dd-item to="/credits">Credits</b-dd-item>
+                  <b-dd-item>How To Use This Guide</b-dd-item>
+                </b-nav-item-dropdown>
+              </div>
+              <div class="col-lg-3 border-right">              
+                <b-nav-item-dropdown
+                  id="nestedDropDown"
+                  text="Discord Servers"
+                  class="has-megamenu nav-grey d-lg-none"
+                >
+                  <b-dd-item href="https://discord.gg/tjaGuA3" target="_blank">Extreme Evolution</b-dd-item>
+                  <b-dd-item href="https://discord.gg/QbPwGjK" target="_blank">BRS #GundamPilots</b-dd-item>
+                  <b-dd-item href="https://discord.gg/vtdV6kR" target="_blank">Newtype Academy</b-dd-item>
+                  <b-dd-item href="https://discord.gg/xTGm5y" target="_blank">GN Resonance</b-dd-item>
+                  <b-dd-item href="https://discord.gg/0XZ1jyybIVCeK2dS" target="_blank">Gundam EXVS Australia</b-dd-item>
+                  <b-dd-item href="https://discord.gg/yjTV9yY" target="_blank">EU Gundam EXVS</b-dd-item>
+                  <b-dd-item href="https://discord.gg/BcCBK6E" target="_blank">NGI Events</b-dd-item>
+                  <b-dd-item href="https://discord.gg/K6mJeyU" target="_blank">GundamEXVS_SEA</b-dd-item>
+                  <b-dd-item href="https://discord.gg/ZhRs4mg" target="_blank">r/Gundam &amp; r/Gunpla</b-dd-item>
+                  <b-dd-item href="https://discord.gg/ubw" target="_blank">UnlimtedBrettWorks</b-dd-item>
+                  <b-dd-item href="https://discord.gg/TPNNNT" target="_blank">Gundam HQ</b-dd-item>    
+                </b-nav-item-dropdown>
+              </div>       
+              <div class="col-lg-3 border-right">              
+                <b-nav-item-dropdown
+                  id="nestedDropDown"
+                  text="Other Resources"
+                  class="has-megamenu nav-grey d-lg-none"
+                >
+                  <b-dd-item href="https://w.atwiki.jp/gundamexvsmbon/" target="_blank">JP MBON Wiki</b-dd-item>
+                  <b-dd-item href="https://translate.google.com/translate?sl=ja&tl=en&u=https%3A%2F%2Fw.atwiki.jp%2Fgundamexvsmbon%2F" target="_blank">JP MBON Wiki (EN Translation)</b-dd-item>
+                  <b-dd-item href="https://ggez.space/mbon-wiki/" target="_blank">GGEZ MBON Wiki</b-dd-item>
+                  <b-dd-item href="https://ggez.space/3000-cost-mobile-suits/" target="_blank">GGEZ - <span class="bg-danger p-1 text-light">3000 Cost</span></b-dd-item>
+                  <b-dd-item href="https://ggez.space/2500-cost-mobile-suits/" target="_blank">GGEZ - <span class="bg-orange p-1 text-light">2500 Cost</span></b-dd-item>
+                  <b-dd-item href="https://ggez.space/2000-cost-mobile-suits/" target="_blank">GGEZ - <span class="bg-warning p-1 text-light">2000 Cost</span></b-dd-item>
+                  <b-dd-item href="https://ggez.space/1500-cost-mobile-suits/" target="_blank">GGEZ - <span class="bg-success p-1 text-light">1500 Cost</span></b-dd-item>
+                  <b-dd-item href="https://reddit.com/r/GundamEXVS" target="_blank">r/GundamEXVS</b-dd-item>
+                  <b-dd-item href="https://sites.google.com/view/mbon-guide" target="_blank">UBW MBON Guide</b-dd-item>
+                  <b-dd-item href="https://docs.google.com/document/d/1YStVb9xGbXOY3QRYd2TDppzMzNFucXYK_NDNyT7yg9c/edit?usp=sharing" target="_blank">EXEV / BRS MBON Guide</b-dd-item>
+                </b-nav-item-dropdown>
+              </div>                                           
+            </div>
+          </b-nav-item-dropdown>
         </b-navbar-nav>
       </b-collapse>
     </div>
@@ -915,11 +968,21 @@ export default {
 };
 </script>
 
+Scoped styles only affect the compo
+
+<style>
+
+</style>
+
 <style scoped>
-.has-megamenu {
-  padding-right: 1em;
+nav {
+  background-color: white;
 }
 
+.nav-item /deep/ .dropdown-item {
+  white-space: unset!important;
+  border-bottom: 1px solid rgba(221, 221, 221, 0.301)
+}
 .row {
   margin: 0;
 }
@@ -952,6 +1015,8 @@ export default {
   color: #86939e !important;
   font-weight: bold;
 }
+
+
 
 #nestedDropDown /deep/ li {
   text-align: center;
@@ -1001,6 +1066,8 @@ export default {
 #nestedDropDown.nav-grey /deep/ span.text-light {
   color: white!important;
 }
+
+
 
 
 

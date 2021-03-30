@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2><strong>Foreword</strong></h2>
+    <h1><strong>Foreword</strong></h1>
     <hr />
     <div class="content">
       <div class="row">

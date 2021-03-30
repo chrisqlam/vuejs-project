@@ -1,16 +1,17 @@
 <template>
-  <div class="content">
-    <h2>Dedication</h2>
+  <div>
+    <h1><strong>Dedication</strong></h1>
     <hr />
-    <p>
-      This guide is dedicated to the memory of Richard “Pat” Patterson
-      <br />who handed me my first joystick 
-      <br />gave me the soul of a competitor
-      <br />taught me the value of self-improvement
-      <br />and was one of the very first set of outside eyes on this project
-      <br />
-      <br />watch us fly, Pops <br />1958 - 2020
-    </p>
+    <div class="content">
+      <p>
+        This guide is dedicated to the memory of Richard “Pat” Patterson
+        <br />who handed me my first joystick <br />gave me the soul of a
+        competitor <br />taught me the value of self-improvement <br />and was
+        one of the very first set of outside eyes on this project
+        <br />
+        <br />watch us fly, Pops <br />1958 - 2020
+      </p>
+    </div>
   </div>
 </template>
 
