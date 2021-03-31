@@ -968,12 +968,6 @@ export default {
 };
 </script>
 
-Scoped styles only affect the compo
-
-<style>
-
-</style>
-
 <style scoped>
 nav {
   background-color: white;

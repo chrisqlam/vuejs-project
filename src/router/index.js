@@ -5,6 +5,7 @@ import Dedication from '../views/Dedication.vue'
 import Foreword from '../views/Foreword.vue'
 import Credits from '../views/Credits.vue'
 
+
 Vue.use(VueRouter)
 
 const routes = [
