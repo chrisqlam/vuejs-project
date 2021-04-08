@@ -1,5 +1,7 @@
 # gundam-bootstrap-vue
 
+A skeleton project made for a friend in Vue.js for them to use and build pages. I created the Vue.js backbone and documentation for them to use to add more pages.
+
 ## Project setup
 ```
 npm install
